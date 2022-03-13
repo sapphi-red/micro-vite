@@ -9,7 +9,13 @@ export const startDev = () => {
   server.use(
     sirv(undefined, {
       dev: true,
-      etag: true
+      etag: true,
+      setHeaders(res, pathname) {
+        // .js, .ts should be application/javascript
+        if (/\.[tj]s$/.test(pathname)) {
+          res.setHeader('Content-Type', 'application/javascript')
+        }
+      }
     })
   )
   server.use(historyApiFallback() as any)
