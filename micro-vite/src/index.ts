@@ -1,5 +1,6 @@
 import cac from 'cac'
 import { startDev } from './dev'
+import { startBuild } from './build'
 
 const cli = cac()
 
@@ -10,7 +11,7 @@ cli.command('dev')
 
 cli.command('build')
   .action(() => {
-    console.log('build start')
+    startBuild()
   })
 
 cli.help()
