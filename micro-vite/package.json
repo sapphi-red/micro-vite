@@ -4,8 +4,12 @@
   "description": "minimal vite like tool",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsup src/index.ts",
+    "watch": "tsup src/index.ts --watch"
   },
   "author": "sapphi-red <green@sapphi.red> (https://github.com/sapphi-red)",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "tsup": "^5.12.1"
+  }
 }
