@@ -1,10 +1,11 @@
 import cac from 'cac'
+import { startDev } from './dev'
 
 const cli = cac()
 
 cli.command('dev')
   .action(() => {
-    console.log('dev server start')
+    startDev()
   })
 
 cli.command('build')
