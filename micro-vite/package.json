@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "minimal vite like tool",
   "main": "dist/index.js",
+  "bin": {
+    "micro-vite": "cli.js"
+  },
   "scripts": {
     "build": "tsup src/index.ts",
     "watch": "tsup src/index.ts --watch"
@@ -11,5 +14,8 @@
   "license": "MIT",
   "devDependencies": {
     "tsup": "^5.12.1"
+  },
+  "dependencies": {
+    "cac": "^6.7.12"
   }
 }

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "micro-vite dev",
+    "build": "micro-vite build"
   },
   "author": "sapphi-red <green@sapphi.red> (https://github.com/sapphi-red)",
   "license": "MIT",
